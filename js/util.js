@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = "¡Vuelve pronto!";  // Cambia el título cuando la pestaña no está visible
+        } else {
+            document.title = "Deco Arts";  // Cambia el título cuando la pestaña vuelve a ser visible
+        }
+    });
+});
+
+
+
 const marquee = document.getElementById('marquee');
 
 let isDown = false;
