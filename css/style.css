@@ -1,0 +1,85 @@
+.hover\:grow {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.hover\:grow:hover {
+    transform: scale(1.02);
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #000;
+    /*Set to match the Tailwind colour you want the active one to be */
+}
+
+
+
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+    }
+    .swiper-pagination-current {
+    color: #111827 !important;
+    }
+    .swiper-pagination-total {
+    color: #9CA3AF;
+    }
+    .swiper-slide img {
+      
+        object-fit: cover; /* Esto asegura que la imagen cubra todo el área sin distorsionarse */
+    }
+    .accordion-content {
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+      }
+      
+    .marquee {
+        width: 100%; /* Ancho completo del contenedor */
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        white-space: nowrap; /* Evitar que el contenido se divida en líneas */
+        scroll-behavior: smooth; /* Suavizar el desplazamiento */
+    }
+    
+    .marquee::-webkit-scrollbar {
+        height: 8px; /* Ajustar la altura del scrollbar */
+    }
+    
+    .marquee::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* Color del thumb */
+        border-radius: 4px; /* Bordes redondeados */
+    }
+    

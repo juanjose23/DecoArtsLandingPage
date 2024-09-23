@@ -1,32 +1,69 @@
+const marquee = document.getElementById('marquee');
 
-document.addEventListener('DOMContentLoaded', function () {
-     const collapseButton = document.querySelector('[data-collapse-toggle="navbar"]');
-     const navbar = document.getElementById('navbar');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-     // Toggle del navbar al hacer clic en el botón
-     collapseButton.addEventListener('click', function () {
-         navbar.classList.toggle('hidden');
-     });
+marquee.addEventListener('mousedown', (e) => {
+    isDown = true;
+    marquee.classList.add('active'); // Puedes agregar una clase para estilos opcionales
+    startX = e.pageX - marquee.offsetLeft;
+    scrollLeft = marquee.scrollLeft;
+});
 
-     // Cerrar el navbar si se hace clic fuera de él
-     document.addEventListener('click', function (event) {
-         if (!collapseButton.contains(event.target) && !navbar.contains(event.target)) {
-             navbar.classList.add('hidden');
-         }
-     });
-     const dropdownButton = document.getElementById('dropdownButton');
-     const menu = document.getElementById('menu1');
+marquee.addEventListener('mouseleave', () => {
+    isDown = false;
+    marquee.classList.remove('active');
+});
 
-     dropdownButton.addEventListener('click', function () {
-         // Alternar la clase 'hidden' para mostrar/ocultar el menú
-         menu.classList.toggle('hidden');
-     });
+marquee.addEventListener('mouseup', () => {
+    isDown = false;
+    marquee.classList.remove('active');
+});
 
-     // Cerrar el menú si se hace clic fuera de él
-     document.addEventListener('click', function (event) {
-         if (!dropdownButton.contains(event.target) && !menu.contains(event.target)) {
-             menu.classList.add('hidden');
-         }
-     });
+marquee.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Si no se está haciendo clic, no hace nada
+    e.preventDefault(); // Prevenir el comportamiento de selección de texto
+    const x = e.pageX - marquee.offsetLeft;
+    const walk = (x - startX) * 2; // Multiplica por 2 para ajustar la velocidad
+    marquee.scrollLeft = scrollLeft - walk;
+});
 
- });
+// Opcional: Para que el marquee se reinicie al final
+marquee.addEventListener('scroll', () => {
+    if (marquee.scrollLeft + marquee.clientWidth >= marquee.scrollWidth) {
+        marquee.scrollLeft = 0;
+    }
+});
+
+var swiper = new Swiper(".default-carousel", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        // Cerrar otros acordeones
+        document.querySelectorAll('.accordion-content').forEach(content => {
+            if (content !== button.nextElementSibling) {
+                content.style.maxHeight = null;
+            }
+        });
+
+        // Alternar el acordeón actual
+        const content = button.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px'; // Ajusta el max-height según el contenido
+        }
+    });
+});

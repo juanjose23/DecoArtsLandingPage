@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DECO ART</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -17,9 +19,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body class=" ">
+<body class="">
+
     <nav class="bg-[#364B60] text-white">
         <!-- Desktop Navbar -->
         <div class="hidden md:block">
@@ -221,137 +226,323 @@
         </div>
 
     </nav>
-    <section class="py-24 relative">
-        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-            <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                <div
-                    class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                    <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                        <img class="rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741205.png"
-                            alt="Decoración del hogar" />
-                    </div>
-                    <img class="sm:ml-0 ml-auto rounded-xl object-cover"
-                        src="https://pagedone.io/asset/uploads/1717741215.png" alt="Decoración del hogar" />
-                </div>
-                <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                    <div class="w-full flex-col justify-center items-start gap-8 flex">
-                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                            <h2
-                                class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                Transformando Espacios en Hogares Cálidos
-                            </h2>
-                            <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                En DecoArts, cada pieza que seleccionamos contribuye a crear un ambiente acogedor y
-                                estilizado.
-                                Nuestro compromiso es hacer que cada hogar refleje la personalidad y el estilo de
-                                quienes lo habitan.
-                            </p>
-                        </div>
-                        <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                            <div class="flex-col justify-start items-start inline-flex">
-                                <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Años de Experiencia en
-                                    Decoración</h6>
-                            </div>
-                            <div class="flex-col justify-start items-start inline-flex">
-                                <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">125+</h4>
-                                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Proyectos de Decoración
-                                    Exitosos</h6>
-                            </div>
-                            <div class="flex-col justify-start items-start inline-flex">
-                                <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">52+</h4>
-                                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Clientes Satisfechos
-                                </h6>
-                            </div>
+
+    <div class="carousel relative container mx-auto" style="max-width:1600px;">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                    style="background-image: url('img/web.jfif');">
+
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                                href="#">view product</a>
                         </div>
                     </div>
-                    <button
-                        class="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                        <span class="px-1.5 text-white text-sm font-medium leading-6">Descubre Más</span>
-                    </button>
+
                 </div>
             </div>
-        </div>
-    </section>
+            <label for="carousel-3"
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2"
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+                    style="background-image: url('img/img2.jpeg');">
 
-    <section class="py-24 relative xl:mr-0 lg:mr-5 mr-0">
-        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-            <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
-                <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                    <div class="w-full flex-col justify-center items-start gap-8 flex">
-                        <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
-                            <h6 class="text-gray-400 text-base font-normal leading-relaxed">Sobre Nosotros</h6>
-                            <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                                <h2
-                                    class="text-indigo-700 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                    La Historia de Nuestros Logros
-                                </h2>
-                                <p
-                                    class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                    Nuestra historia de logros es un testimonio de trabajo en equipo y perseverancia.
-                                    Juntos, hemos superado desafíos, celebrado victorias y creado una narrativa de
-                                    progreso y éxito.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="w-full flex-col justify-center items-start gap-6 flex">
-                            <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                <div
-                                    class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                    <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">33+ Años</h4>
-                                    <p class="text-gray-500 text-base font-normal leading-relaxed">Influyendo en el
-                                        Diseño del Hogar</p>
-                                </div>
-                                <div
-                                    class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                    <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">125+ Proyectos
-                                    </h4>
-                                    <p class="text-gray-500 text-base font-normal leading-relaxed">Excelencia a Través
-                                        del Éxito</p>
-                                </div>
-                            </div>
-                            <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                <div
-                                    class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                    <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">26+ Premios</h4>
-                                    <p class="text-gray-500 text-base font-normal leading-relaxed">Nuestra Dedicación a
-                                        la Innovación</p>
-                                </div>
-                                <div
-                                    class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                    <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">99% Clientes
-                                        Satisfechos</h4>
-                                    <p class="text-gray-500 text-base font-normal leading-relaxed">Reflejo de Nuestro
-                                        Enfoque en la Satisfacción del Cliente.</p>
-                                </div>
-                            </div>
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Real Bamboo Wall Clock</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                                href="#">view product</a>
                         </div>
                     </div>
-                    <button
-                        class="sm:w-fit w-full group px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
-                        <span
-                            class="px-1.5 text-indigo-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">Leer
-                            Más</span>
-                        <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
-                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#4F46E5" stroke-width="1.6"
-                                stroke-linecap="round" stroke-linejoin="round" />
+
+                </div>
+            </div>
+            <label for="carousel-1"
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3"
+                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
+                    style="background-image: url('img/2148818486.jpg');">
+
+
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Brown and blue hardbound book</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                                href="#">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-2"
+                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1"
+                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+
+
+    <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <header class="text-center">
+                <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">New Collection</h2>
+
+                <p class="mx-auto mt-4 max-w-md text-gray-500">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
+                    dicta incidunt est ipsam, officia dolor fugit natus?
+                </p>
+            </header>
+
+            <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
+                <li>
+                    <a href="#" class="group relative block">
+                        <img src="img/carrusel_1.jpeg" alt=""
+                            class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
+
+                        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                            <h3 class="text-xl font-medium text-white">Casual Trainers</h3>
+
+                            <span
+                                class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                Shop Now
+                            </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="group relative block">
+                        <img src="img/carrusel_2.jpeg" alt=""
+                            class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
+
+                        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                            <h3 class="text-xl font-medium text-white">Winter Jumpers</h3>
+
+                            <span
+                                class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                Shop Now
+                            </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+                    <a href="#" class="group relative block">
+                        <img src="img/carrusel_1.jpeg" alt=""
+                            class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
+
+                        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                            <h3 class="text-xl font-medium text-white">Skinny Jeans Blue</h3>
+
+                            <span
+                                class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                Shop Now
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bg-white py-8">
+
+        <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+
+            <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+                <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+
+                    <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
+                        href="#">
+                        Products
+                    </a>
+
+                    <div class="flex items-center" id="store-nav-content">
+
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
+                            </svg>
+                        </a>
+
+                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
                         </svg>
-                    </button>
-                </div>
-                <div class="w-full lg:justify-start justify-center items-start flex">
-                    <div
-                        class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
-                        <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
-                            src="https://pagedone.io/asset/uploads/1717742431.png" alt="Imagen sobre nosotros" />
                     </div>
-                </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
             </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                <a href="#">
+                    <img class="hover:grow hover:shadow-lg"
+                        src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80">
+                    <div class="pt-3 flex items-center justify-between">
+                        <p class="">Product Name</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                    </div>
+                    <p class="pt-1 text-gray-900">£9.99</p>
+                </a>
+            </div>
+
         </div>
+
     </section>
-
-
     <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- Grid -->
@@ -424,7 +615,8 @@
             <!-- Grid -->
             <div class="py-7 border-t border-gray-200">
                 <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-                    <span class="text-sm text-gray-500 ">©<a href="https://github.com/juanjose23">DecoArts</a> 2024,
+
+                    <span class="text-sm text-gray-500 ">©<a href="https://github.com/juanjose23/">DecoArts</a> 2024,
                         Todos los derechos reservados.</span>
                     <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                         <a href="javascript:;"
@@ -516,8 +708,6 @@
 
         </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
